@@ -16,19 +16,13 @@
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
+            backdrop-filter: blur(6px);
             color: white;
             height: 100vh;
             display: flex;
             flex-direction: column;
         }
-        .navbar-logo {
-            position: absolute;
-            top: 0;
-            left: 20px;
-            z-index: 10;
-            width: 150px;
-            height: auto;
-        }
+      
         .custom-navbar {
             background-color: #8ABF14;
             height: 45px; 
@@ -106,7 +100,7 @@
             left: 1px;
             z-index: 10;
             width: 200px;
-            height: 108px;
+            height:50px;
         }
 
      
@@ -126,8 +120,9 @@
         }
 
         h1 {
-            font-size: 70px;
+            font-size: 90px;
             margin-bottom: 20px;
+            font-family: 'Poppins', sans-serif;
         }
 
         p {
@@ -138,12 +133,14 @@
         }
 
         button {
-            padding: 10px 20px;
-            font-size: 16px;
+            width:fit-content;
+            padding:10px;
+            font-size: 30px;
             color: black;
             background: white;
             border: none;
             border-radius: 5px;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);            ;
             cursor: pointer;
         }
 
@@ -191,7 +188,7 @@
 </head>
 <body>
     
-    <img src="C:\Users\Cainc\OneDrive\Desktop\wkr\Screenshot 2024-12-02 233605.png" alt="Logo" class="navbar-logo">
+    <img src="ivanilogo.png" alt="Logo" class="navbar-logo">
 
    
     <nav class="navbar navbar-expand-lg custom-navbar">

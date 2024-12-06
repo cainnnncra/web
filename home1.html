@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivani</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <style>
+        /* General body styling */
+        *{
+            margin:0;
+            padding:0;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-image: url('ccc.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            backdrop-filter: blur(9px);
+            color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .navbar{
+            background-color: #8ABF14;
+            display: flex;
+            gap:160px;
+            align-items: center;
+        }
+        .nav-links {
+            display: flex; 
+            flex-direction: row; 
+            align-items: center; 
+            margin-top: 50px; 
+            margin-bottom:10px;
+            padding: 0; 
+        }
+        
+        .nav-links ul {
+            display: flex; 
+            list-style: none; 
+            margin: 0; 
+            padding: 0; 
+        }
+        
+        .nav-links li {
+            margin: 0 15px; 
+            font-size: 18px; 
+            font-weight:bold;
+            color:#243206; 
+            cursor: pointer; 
+          
+        }
+        .nav-links a{
+            transition: transform 0.3s ease;
+        }
+        .nav-links a:hover{
+            transform:scale(1.24);
+        }
+
+        .email-contact, .phone-contact{
+            display: flex;
+            flex-direction: row;
+        }
+        .contact{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;;
+            position:absolute;
+            top:10px;;
+            right:10px;
+        }
+        .contact p{
+            font-size:12px;
+        }
+        .contact img{
+            margin-bottom:10PX;
+        }
+        .logo{
+            justify-self:self-start;
+        }
+        .row {
+            display: flex;
+            flex: 1;
+            padding: 50px;
+            gap: 30px;
+        }
+        .col {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        h1 {
+            font-size: 90px;
+            color:#243206;
+            margin-bottom:0;
+        }
+        h2 {
+            margin-top: 0;
+            color:#243206;
+            margin-bottom:20px;
+        }
+        button {
+            width:fit-content;
+            padding:10px;
+            font-size: 40px;
+            color: white;
+           background-color:#243206;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            transition: transform 0.3s ease;
+            margin-top:30px;
+            
+        }
+        button:hover {
+            background-color: white;
+            color:#243206;
+            transform:scale(1.1);
+        }
+        .cards-container {
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .card, .card2, .card3, .card4 {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .card:hover, .card2:hover, .card3:hover, .card4:hover {
+            transform: translateY(-5px);
+        }
+        .card img, .card2 img, .card3 img, .card4 img {
+            width: 90%;
+            height: 150px;
+            
+        }
+        .card h2, .card2 h2, .card3 h2, .card4 h2 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="./ivanilogo.png" height="90" width="180" class="logo">
+        <div class="nav-links">
+            <ul>
+                <a href=""><li>Home</li></a>
+                <a href=""><li>Products</li></a>
+                <a href=""><li>Our Blog</li></a> 
+                <a href=""><li>About Us</li></a>
+                <a href=""><li>Contact</li></a>
+            </ul>
+        </div>
+        <div class="contact">
+            <div class="email-contact">
+                <img src="./email.png" height="20" width="20">
+                <p>jdcbattery@gmail.com</p>
+            </div>
+            <div class="phone-contact">
+                <img src="./call.png" height="20" width="20">
+                <p>+91-969-999-9244</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h1>Ivani</h1>
+            <h2>Power of the Sun</h2>
+            <button type="button">Explore</button>
+        </div>
+        <div class="cards-container">
+            <div class="card">
+                <h2>Battery 1</h2>
+                <img src="./ivani1.png" alt="Battery 1">
+            </div>
+            <div class="card2">
+                <h2>Battery 2</h2>
+                <img src="./ivani2.png" alt="Battery 2" height="50" width="50">
+            </div>
+            <div class="card3">
+                <h2>Battery 3</h2>
+                <img src="./ivani3.png" alt="Battery 3" height="50" width="50">
+            </div>
+            <div class="card4">
+                <h2>Battery 4</h2>
+                <img src="./ivani4.png" alt="Battery 4"> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>
