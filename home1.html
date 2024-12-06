@@ -18,7 +18,7 @@
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
-            backdrop-filter: blur(9px);
+            backdrop-filter: blur(11px);
             color: white;
             height: 100vh;
             display: flex;
@@ -118,38 +118,42 @@
             gap: 30px;
         }
         .col {
-            flex: 1;
+            flex: 0 0 auto;
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
         h1 {
-            font-size: 90px;
-            color:#243206;
-            margin-bottom:0;
+            width: 600px;
+            font-size: 140px;
+            color: #243206;
+            display: inline-block;
+            margin: -50px 0 0 0; 
         }
+        
         h2 {
-            margin-top: 0;
-            color:#243206;
-            margin-bottom:20px;
+            margin: -20px 0 20px 0; 
+            color: #243206;
+            font-size:30px;
         }
         button {
-            width:fit-content;
-            padding:10px;
-            font-size: 40px;
-            color: white;
-           background-color:#243206;
+            width:250px;
+            padding:20px;
+            font-size: 20px;
+            color: #243206;
+           background-color:white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             transition: background 0.3s ease;
             transition: transform 0.3s ease;
             margin-top:30px;
+            border-radius:40px;
             
         }
         button:hover {
-            background-color: white;
-            color:#243206;
+            background-color: #243206;
+            color:white;
             transform:scale(1.1);
         }
         .cards-container {
