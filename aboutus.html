@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-image: url('modern-aesthetic-white-polygonal-background-with-a-blue-spot-vector.jpg');
+        }
+        .navbar-logo {
+            position: absolute;
+            top: 0;
+            left: 20px;
+            z-index: 10;
+            width: 150px;
+            height: auto;
+        }
+        .custom-navbar {
+            background-color: #8ABF14;
+            height: 45px; 
+            width: 100%; 
+            color: white; 
+            display: flex; 
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0 20px;
+            position: relative;
+            margin-bottom: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+        .navbar-brand img {
+            transition: transform 0.3s ease;
+        }
+        .navbar-brand img:hover {
+            transform: scale(1.1);
+        }
+        .navbar-brand span {
+            margin-left: 5px;
+            font-size: 12px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            color: white;
+        }
+        .navbar-brand span:hover {
+            color: #FFC107;
+            cursor: pointer;
+        }
+        .contact-info {
+            display: flex; 
+            justify-content: flex-end;
+            width: 100%;
+        }
+        .contact-info .navbar-brand {
+            margin-right: 20px;
+        }
+        .hi-navbar {
+            background-color: #8ABF14;
+            color: white;
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-top: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        .hi-navbar .navbar-nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .hi-navbar .nav-link {
+            color: white !important;
+            padding: 10px 25px;
+            font-size: 22px;
+            text-decoration: none;
+        }
+        .hi-navbar .nav-link:hover {
+            color: #FFC107 !important;
+        }
+        .navbar-logo {
+            position: absolute;
+            top: 0;
+            left: 1px;
+            z-index: 10;
+            width: 200px;
+            height: 108px;
+        }
+        .bg h1 {
+            text-align: left;
+            margin-left: 12%;
+            margin-top: 5%;
+            font-size: 75px;
+            text-shadow: 2px 2px 5px rgba(23, 68, 2, 0.7);
+        }
+        .bg {
+            position: relative;
+            background: url('IMG-20241205-WA0012.jpg') center/cover no-repeat;
+            height: 680px;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            font-family: 'Poppins', sans-serif;
+        }
+        .wrap {
+            position: relative;
+        }
+        .mor {
+            background: url('IMG-20241202-WA0021.jpg');
+            background-size: cover;
+            width: 600px;
+            height: 400px;
+            margin-top: 5%;
+            margin-left: 3%;
+            border: 3px solid transparent;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-image: linear-gradient(45deg, #4CAF50, #A8E6CF) 1;
+            position: absolute;
+            z-index: 1;
+        }
+        .more {
+            background: url('IMG-20241202-WA0019.jpg');
+            background-size: cover;
+            width: 450px;
+            height: 400px;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translateX(6%);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            z-index: 2;
+            border: 3px solid transparent;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-image: linear-gradient(45deg, #4CAF50, #A8E6CF) 1;
+        }
+        .abb h1{
+            text-align: right;
+            margin-right: 40%;
+            margin-top: 5%;
+            font-family: 'Poppins', sans-serif;
+            font-size: 40px;
+          
+        }
+        .abb p{
+            text-align: left; 
+    margin-left: 40%; 
+    margin-top: 0%; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px; 
+    color: black; 
+    line-height: 1.5;
+        }
+        .p1{
+            text-align: left; 
+    margin-left: 40%;
+    margin-top: 0%; 
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px; 
+    color: black; 
+    line-height: 1.5;
+        }
+        .lo {
+    position: relative;
+    height: 200px; 
+    text-align: center;
+    background-color: #4CAF50;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 30%;
+    background-size: cover; 
+    background-position: right; 
+    background-repeat: no-repeat; 
+    background-image: url('ssss.png'); 
+}
+
+
+
+.lo h1 {
+    position: relative;
+    z-index: 1; 
+    color: white; 
+}
+p{
+    color: white;
+}
+.container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: 'Poppins', sans-serif;
+  margin-top: 60px;
+}
+
+.card-icon {
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
+
+.card p, .card ul {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.card ul {
+  list-style-type: disc;
+  text-align: left;
+  padding-left: 20px;
+}
+.card img{
+    width: 100%;
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 8px;
+
+}
+.en{
+    background-color: #8ABF14;
+            height: 60px; 
+            width: 100%; 
+            color: white; 
+            display: flex; 
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0 20px;
+            position: relative;
+            margin-bottom: 0;
+            font-family: 'Poppins', sans-serif;
+            margin-top: 200px;
+}
+
+    </style>
+</head>
+<body>
+    <img src="C:\Users\Cainc\OneDrive\Desktop\wkr\Screenshot 2024-12-02 233605.png" alt="Logo" class="navbar-logo">
+
+   
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="contact-info">
+            <a class="navbar-brand" href="#">
+                <img src="C:\Users\Cainc\OneDrive\Desktop\wkr\Untitled_design_2.png" alt="+91-969-999-9244" width="50" height="50">
+                <span>+91-969-999-9244</span> 
+            </a>
+            <a class="navbar-brand" href="#">
+                <img src="C:\Users\Cainc\OneDrive\Desktop\wkr\Untitled_design_3.png" alt="jdcbattery@gmail.com" width="50" height="50">
+                <span>jdcbattery@gmail.com</span>
+            </a>
+        </div>
+    </nav>
+
+   
+    <nav class="navbar navbar-expand-lg hi-navbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="Home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="AboutUs" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a href="Products.html" class="nav-link">Products</a>
+            </li>
+            <li class="nav-item">
+                <a href="about" class="nav-link">Our Blog</a>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="bg">
+        <h1>About Us</h1>
+    </div>
+
+    <div class="wrap">
+        <div class="mor">
+            <div class="more"></div>
+        </div>
+    </div>
+
+    <div class="abb">
+        <h1>About Ivani</h1>
+        <p>Ivani is a premier provider of automotive battery solutions, dedicated to powering vehicles with unmatched reliability and performance. As a trusted name in the industry, we specialize in offering a wide range of high-quality, durable batteries designed to meet the needs of both personal and commercial vehicles.</p>
+        <p class="p">We pride ourselves on our commitment to excellence and customer satisfaction, offering products that are as reliable as the vehicles they power. With Ivani, you're not just getting a battery – you're investing in the future of automotive energy.</p>
+    </div>
+
+
+    <div class="lo">
+        <h1>WE PROVIDE YOU WITH EXCEPTIONAL PRODUCTS.</h1>
+        <p>Before the final product reaches our customers, it undergoes several quality tests at every stage of production. These tests are conducted using advanced, high-tech machinery, ensuring our products meet the highest standards. This focus on quality is what makes Solance trusted across India. giveme a similar line to this</p>
+
+    </div>
+
+    <div class="container">
+    <div class="card">
+      <img src="mission.png" alt="Mission Icon" >
+      <h2>Our Mission</h2>
+      <p>Delivering sustainable and innovative energy solutions to empower a greener tomorrow.</p>
+    </div>
+    <div class="card">
+      <img src="vision.webp" alt="Vision Icon" >
+      <h2>Our Vision</h2>
+      <p>Empowering the future with cutting-edge, sustainable automotive energy solutions.</p>
+    </div>
+    <div class="card">
+      <img src="core.jpg" alt="Core Values Icon" >
+      <h2>Core Values</h2>
+      <ul>
+        <li>Sustainability</li>
+        <li>Ownership</li>
+        <li>Loyalty</li>
+        <li>Accountability</li>
+        <li>Nimbleness</li>
+        <li>Commitment</li>
+        <li>Excellence</li>
+      </ul>
+    </div>
+  </div>
+  <div class="en">
+
+  </div>
+</body>
+</html>

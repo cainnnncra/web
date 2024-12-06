@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Navbar</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #e0f7fa;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar-logo {
+            position: absolute;
+            top: 0;
+            left: 10px;
+            z-index: 10;
+            width: 200px;
+            height: 100px;
+        }
+        .custom-navbar {
+            background-color: #8ABF14;
+            height: 45px;
+            width: 100%;
+            color: white;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0 20px;
+            box-sizing: border-box;
+            position: relative;
+            margin-bottom: 0;
+        }
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+        .navbar-brand img {
+            transition: transform 0.3s ease;
+        }
+        .navbar-brand img:hover {
+            transform: scale(1.1);
+        }
+        .navbar-brand span {
+            margin-left: 5px;
+            font-size: 12px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            color: white;
+        }
+        .navbar-brand span:hover {
+            color: #FFC107;
+            cursor: pointer;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+        }
+        .contact-info .navbar-brand {
+            margin-right: 20px;
+        }
+        .hi-navbar {
+            background-color: #8ABF14;
+            color: white;
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: 0;
+        }
+        .hi-navbar .navbar-nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .hi-navbar .nav-link {
+            color: white !important;
+            padding: 10px 25px;
+            font-size: 22px;
+            font-family: 'Montserrat', sans-serif;
+            text-decoration: none;
+        }
+        .hi-navbar .nav-link:hover {
+            color: #FFC107 !important;
+        }
+        .image-section {
+            position: relative;
+            width: 100%;
+            height: 700px;
+            margin-top: 0;
+            overflow: hidden;
+            background: linear-gradient(135deg, #8ABF14, white);
+        }
+        .image-section img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            filter: blur(3px);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .text-overlay {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: white;
+            z-index: 2;
+            max-width: 90%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .overlay-heading {
+            font-size: 150px;
+            font-weight: 700;
+            font-family: 'Baloo 2', sans-serif;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-align: left;
+            color: #8ABF14;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+            background: linear-gradient(90deg, #8ABF14, black);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .overlay-tagline {
+            font-size: 40px;
+            font-family: 'Baloo 2', sans-serif;
+            font-weight: 500;
+            margin-top: 10px;
+            letter-spacing: 2px;
+            text-align: left;
+            color: #FFF;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <img src="C:\Users\Cainc\OneDrive\Desktop\wkr\Screenshot 2024-12-02 233605.png" alt="Logo" class="navbar-logo">
+
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="contact-info">
+            <a class="navbar-brand" href="#">
+                <img src="C:\Users\Cainc\OneDrive\Desktop\wkr\Untitled_design_2.png" alt="+91-969-999-9244" width="50" height="50">
+                <span>+91-969-999-9244</span> 
+            </a>
+            <a class="navbar-brand" href="#">
+                <img src="C:\Users\Cainc\OneDrive\Desktop\wkr\Untitled_design_3.png" alt="jdcbattery@gmail.com" width="50" height="50">
+                <span>jdcbattery@gmail.com</span>
+            </a>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg hi-navbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="Home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="AboutUs" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a href="order" class="nav-link">Products</a>
+            </li>
+            <li class="nav-item">
+                <a href="about" class="nav-link">Our Blog</a>
+            </li>
+            <li class="nav-item">
+                <a href="delete" class="nav-link">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="image-section">
+        <img src="C:\Users\Cainc\OneDrive\Desktop\wkr\ivani.png" alt="Background Image">
+        <div class="text-overlay">
+            <div class="overlay-heading">Ivani</div>
+            
+            <div class="overlay-tagline">Power of the Sun</div>
+        </div>
+    </div>
+
+    <div>
+        <h1>Automotive Batteries</h1>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
