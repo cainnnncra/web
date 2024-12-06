@@ -24,64 +24,92 @@
             display: flex;
             flex-direction: column;
         }
-        .navbar{
+        .navbar-logo {
+            position: absolute;
+            top: 0;
+            left: 20px;
+            z-index: 10;
+            width: 150px;
+            height: auto;
+        }
+        .custom-navbar {
             background-color: #8ABF14;
-            display: flex;
-            gap:160px;
+            height: 45px; 
+            width: 100%; 
+            color: white; 
+            display: flex; 
+            justify-content: flex-end;
             align-items: center;
+            padding: 0 20px;
+            position: relative;
+            margin-bottom: 0;
+            font-family: 'Poppins', sans-serif;
         }
-        .nav-links {
-            display: flex; 
-            flex-direction: row; 
-            align-items: center; 
-            margin-top: 50px; 
-            margin-bottom:10px;
-            padding: 0; 
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
         }
-        
-        .nav-links ul {
-            display: flex; 
-            list-style: none; 
-            margin: 0; 
-            padding: 0; 
-        }
-        
-        .nav-links li {
-            margin: 0 15px; 
-            font-size: 18px; 
-            font-weight:bold;
-            color:#243206; 
-            cursor: pointer; 
-          
-        }
-        .nav-links a{
+        .navbar-brand img {
             transition: transform 0.3s ease;
         }
-        .nav-links a:hover{
-            transform:scale(1.24);
+        .navbar-brand img:hover {
+            transform: scale(1.1);
         }
-
-        .email-contact, .phone-contact{
-            display: flex;
-            flex-direction: row;
+        .navbar-brand span {
+            margin-left: 5px;
+            font-size: 12px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            color: white;
         }
-        .contact{
+        .navbar-brand span:hover {
+            color: #FFC107;
+            cursor: pointer;
+        }
+        .contact-info {
+            display: flex; 
+            justify-content: flex-end;
+            width: 100%;
+        }
+        .contact-info .navbar-brand {
+            margin-right: 20px;
+        }
+        .hi-navbar {
+            background-color: #8ABF14;
+            color: white;
+            padding: 15px 0;
             display: flex;
-            align-items: center;
             justify-content: center;
-            margin-right: 20px;;
-            position:absolute;
-            top:10px;;
-            right:10px;
+            align-items: center;
+            width: 100%;
+            margin-top: 0;
+            font-family: 'Poppins', sans-serif;
         }
-        .contact p{
-            font-size:12px;
+        .hi-navbar .navbar-nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
         }
-        .contact img{
-            margin-bottom:10PX;
+        .hi-navbar .nav-link {
+            color: white !important;
+            padding: 10px 25px;
+            font-size: 22px;
+            text-decoration: none;
         }
-        .logo{
-            justify-self:self-start;
+        .hi-navbar .nav-link:hover {
+            color: #FFC107 !important;
+        }
+        .navbar-logo {
+            position: absolute;
+            top: 0;
+            left: 1px;
+            z-index: 10;
+            width: 200px;
+            height: 108px;
         }
         .row {
             display: flex;
@@ -156,28 +184,42 @@
     </style>
 </head>
 <body>
-    <div class="navbar">
-        <img src="./ivanilogo.png" height="90" width="180" class="logo">
-        <div class="nav-links">
-            <ul>
-                <a href=""><li>Home</li></a>
-                <a href=""><li>Products</li></a>
-                <a href=""><li>Our Blog</li></a> 
-                <a href=""><li>About Us</li></a>
-                <a href=""><li>Contact</li></a>
-            </ul>
+    <img src="ivanilogo.png" alt="Logo" class="navbar-logo">
+
+   
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="contact-info">
+            <a class="navbar-brand" href="#">
+                <img src="call.png" alt="+91-969-999-9244" width="50" height="50">
+                <span>+91-969-999-9244</span> 
+            </a>
+            <a class="navbar-brand" href="#">
+                <img src="email.png" alt="jdcbattery@gmail.com" width="50" height="50">
+                <span>jdcbattery@gmail.com</span>
+            </a>
         </div>
-        <div class="contact">
-            <div class="email-contact">
-                <img src="./email.png" height="20" width="20">
-                <p>jdcbattery@gmail.com</p>
-            </div>
-            <div class="phone-contact">
-                <img src="./call.png" height="20" width="20">
-                <p>+91-969-999-9244</p>
-            </div>
-        </div>
-    </div>
+    </nav>
+
+   
+    <nav class="navbar navbar-expand-lg hi-navbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="home.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="aboutus.html" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a href="Products.html" class="nav-link">Products</a>
+            </li>
+            <li class="nav-item">
+                <a href="about" class="nav-link">Our Blog</a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link">Contact</a>
+            </li>
+        </ul>
+    </nav>
     <div class="row">
         <div class="col">
             <h1>Ivani</h1>
