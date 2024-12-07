@@ -131,7 +131,7 @@
             display: inline-block;
       
         }
-        .grid1{
+        .grid1, .grid2, .grid3, .grid4, .grid5, .grid6, .grid7, .grid8, .grid9, .grid10, .grid11, .grid12{
      
             background-color: rgb(202, 197, 197);
             padding:10px;
@@ -141,9 +141,14 @@
             box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.7);
             cursor:pointer;
             transition:transform 0.3s ease;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.6s ease, transform 0.6s ease, transform 0.3s ease;
         }
-        .grid1:hover{
-            transform:scale(1.05);
+        .grid1.visible, .grid2.visible, .grid3.visible, .grid4.visible, .grid5.visible, .grid6.visible, .grid7.visible, .grid8.visible, .grid9.visible, .grid10.visible, .grid11.visible, .grid12.visible{
+            opacity: 1; 
+            transform: translateY(0) scale(1.05);
+       
         }
        
         .battery-grid img{
@@ -218,13 +223,13 @@
                     <h2>Battery 1</h2>
                 </div>
             </div>
-            <div class="grid1">
+            <div class="grid2">
                 <div class="for-flex">
                     <img src="./ivani2.png">
                     <h2>Battery 2</h2>
                 </div>
             </div>
-            <div class="grid1">
+            <div class="grid3">
                 <div class="for-flex">
                     <img src="./ivani2.png">
                     <h2>Battery 3</h2>
@@ -232,19 +237,19 @@
             </div>
         </div>
         <div class="flex1">
-            <div class="grid1">
+            <div class="grid4">
                 <div class="for-flex">
                     <img src="./ivani2.png">
                     <h2>Battery 4</h2>
                 </div>
             </div>
-            <div class="grid1">
+            <div class="grid5">
                 <div class="for-flex">
                     <img src="./ivani2.png">
                     <h2>Battery 5</h2>
                 </div>
             </div>
-            <div class="grid1">
+            <div class="grid6">
                 <div class="for-flex">
                     <img src="./ivani2.png">
                     <h2>Battery 6</h2>
@@ -253,19 +258,19 @@
         </div>
         <div class="flex1">
             
-            <div class="grid1">
+            <div class="grid7">
                 <div class="for-flex">
                     <img src="./ivani2.png">
                     <h2>Battery 7</h2>
                 </div>
             </div>
-            <div class="grid1">
+            <div class="grid8">
                 <div class="for-flex">
                     <img src="./ivani2.png">
                     <h2>Battery 8</h2>
                 </div>
             </div>
-            <div class="grid1">
+            <div class="grid9">
                 <div class="for-flex">
                     <img src="./ivani2.png">
                     <h2>Battery 9</h2>
@@ -274,19 +279,19 @@
         </div>
         <div class="flex1">
               
-            <div class="grid1">
+            <div class="grid10">
                 <div class="for-flex">
                     <img src="./ivani2.png">
                     <h2>Battery 10</h2>
                 </div>
             </div>
-            <div class="grid1">
+            <div class="grid11">
                 <div class="for-flex">
                     <img src="./ivani2.png">
                     <h2>Battery 11</h2>
                 </div>
             </div>
-            <div class="grid1">
+            <div class="grid12">
                 <div class="for-flex">
                     <img src="./ivani2.png">
                     <h2>Battery 12</h2>
@@ -302,4 +307,25 @@
         
     </div>
 </body>
+
+<script>
+        
+    const animatedElements = document.querySelectorAll('.grid1, .grid2, .grid3, .grid4, .grid5, .grid6, .grid7, .grid8, .grid9, .grid10, .grid11, .grid12');
+
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible'); 
+            } else {
+                entry.target.classList.remove('visible'); 
+            }
+        });
+    }, {
+        threshold: 0.5 
+    });
+
+ 
+    animatedElements.forEach(el => observer.observe(el));
+</script>
 </html>
