@@ -18,7 +18,7 @@
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
-            backdrop-filter: blur(9px);
+            backdrop-filter: blur(8px);
             color: white;
             height: 100vh;
             display: flex;
@@ -118,38 +118,42 @@
             gap: 30px;
         }
         .col {
-            flex: 1;
+            flex: 0 0 auto;
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
         h1 {
-            font-size: 90px;
-            color:#243206;
-            margin-bottom:0;
+            width: 600px;
+            font-size: 140px;
+            color: #243206;
+            display: inline-block;
+            margin: -50px 0 0 0; 
         }
+        
         h2 {
-            margin-top: 0;
-            color:#243206;
-            margin-bottom:20px;
+            margin: -20px 0 20px 0; 
+            color: #243206;
+            font-size:30px;
         }
         button {
-            width:fit-content;
-            padding:10px;
-            font-size: 40px;
-            color: white;
-           background-color:#243206;
+            width:250px;
+            padding:20px;
+            font-size: 20px;
+            color: #243206;
+           background-color:white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
             transition: background 0.3s ease;
             transition: transform 0.3s ease;
             margin-top:30px;
+            border-radius:40px;
             
         }
         button:hover {
-            background-color: white;
-            color:#243206;
+            background-color: #243206;
+            color:white;
             transform:scale(1.1);
         }
         .cards-container {
@@ -157,6 +161,7 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
+            padding:20px;
         }
         a{
             text-decoration: none;
@@ -172,10 +177,18 @@
         .card:hover, .card2:hover, .card3:hover, .card4:hover {
             transform: translateY(-5px);
         }
-        .card img, .card2 img, .card3 img, .card4 img {
+        .card img, .card2 img, .card4 img {
             width: 90%;
-            height: 150px;
+            height: auto;
+            object-fit: contain;
+            max-height: 230px;
             
+        }
+        .card3 img{
+            width: 90%;
+            height: auto;;
+            object-fit: contain;
+            max-height: 230px;
         }
         .card h2, .card2 h2, .card3 h2, .card4 h2 {
             font-size: 18px;
@@ -204,7 +217,7 @@
     <nav class="navbar navbar-expand-lg hi-navbar">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a href="home.html" class="nav-link">Home</a>
+                <a href="home1.html" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
                 <a href="aboutus.html" class="nav-link">About Us</a>
@@ -216,7 +229,7 @@
                 <a href="about" class="nav-link">Our Blog</a>
             </li>
             <li class="nav-item">
-                <a href="" class="nav-link">Contact</a>
+                <a href="contact.html" class="nav-link">Contact</a>
             </li>
         </ul>
     </nav>
